@@ -1,0 +1,67 @@
+nav{
+    font-family: 'Caveat', cursive;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Whisper', cursive;
+    background-color: yellow;
+    height: 32px;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 11px;
+}
+nav > ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+nav >ul >li{
+    text-transform: uppercase;
+    /* text-transform: lowercase; */
+    /* text-transform: capitalize; */
+    display: inline;
+    float: left;
+    padding: 7px 5px 10px 5px;
+}
+nav >ul >li:hover,
+nav >ul li.active
+{
+    background-color: brown;
+}
+nav >ul >li.active >a{
+    color: rgb(13, 92, 92);
+
+}
+nav >ul >li>a{
+    color: rgb(13, 92, 92);
+    text-decoration: none;
+    list-style: none;
+    padding: 9px 20px;
+}
+/* zonaa dedicata pentru submeniu */
+ul.submeniu{
+    text-transform: uppercase;
+    display:none;
+    list-style: none;
+}
+nav >ul >li:hover >ul.submeniu{
+    display: block;
+    background-color: rgba(21, 166, 64, 0.508);
+    clear: both;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 100;
+    width: 160px;
+}
+ul.submeniu>li>a{
+    padding: 15px 20px;
+    text-decoration: none;
+}
+ul.submeniu>li:hover{
+    background-color: blue;
+    color: beige;
+}
+nav>ul>li.hover>ul.submeniu>li{
+    padding: 7px 5px 7px 5px;
+    text-decoration: none;
+    color: beige;
+}
